@@ -19,14 +19,14 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header className="max-w-7xl mx-auto py-10 px-5 w-full flex justify-between items-center">
+    <header className="max-w-7xl mx-auto py-5 px-5 w-full flex justify-between items-center">
       <div>
         <Image
           src="/logo.png"
           alt="logo"
           width={30}
           height={30}
-          className="w-6 sm:w-7 md:w-8 h-auto"
+          className="w-6 sm:w-7 md:w-8 h-auto nav-logo "
         />
       </div>
       <nav className="flex items-center gap-6 font-poppins text-lg relative">
@@ -36,7 +36,7 @@ const Header = () => {
             <div key={link.href} className="relative">
               <Link
                 href={link.href}
-                className={clsx("pb-2", isActive ? "text-blue-500" : "hover:text-blue-400")}
+                className={clsx("pb-2") }
               >
                 {link.label}
               </Link>

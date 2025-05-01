@@ -5,8 +5,8 @@ const HomePage = () => {
   return (
     <>
       <Hero />
-      <div className="h-screen"></div>
-      <About/>
+      <div className="h-[400px]"></div>
+      <About />
     </>
   );
 };

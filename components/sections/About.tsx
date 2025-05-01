@@ -3,6 +3,8 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import EducationSection from "./EducationSection";
+import ExperienceSection from "./ExperienceSection";
 
 const About = () => {
   const wrapperRef = useRef(null);
@@ -47,7 +49,7 @@ const About = () => {
   return (
     <>
       <section className="bg-gray-100 py-10 flex items-center">
-        <div className="flex flex-col justify-center w-full space-y-2" ref={wrapperRef}>
+        <div className="flex flex-col justify-center w-full space-y-2 md:space-y-4 " ref={wrapperRef}>
           <h1
             ref={titleRef}
             className="bottom-clipped relative inline-block overflow-hidden text-center font-anek text-4xl font-normal text-raisin-black sm:text-5xl lg:text-6xl"
@@ -64,47 +66,9 @@ const About = () => {
             and seamless user interfaces, delivering clean, high-impact
             solutions across the full stack.
           </h4>
-          <div className="grid grid-cols-1 lg:grid-cols-2 max-w-6xl mx-auto w-full gap-6 mt-10">
-            <div className="border rounded-lg p-6 bg-white shadow-sm hover:shadow-md transition-shadow duration-300" data-animation="text">
-              <h2 className="text-2xl font-semibold mb-6 text-gray-800 border-b pb-2">Education</h2>
-              <div className="space-y-6">
-                <div className="border-l-4 border-gray-700  pl-4 relative">
-                  <div className="flex justify-between items-start">
-                    <h3 className="text-lg font-medium">Bachelor's in Computer Science</h3>
-                    <span className="text-gray-500 text-sm ml-4 bg-gray-50 px-3 py-1 rounded-full">2025 - 2028</span>
-                  </div>
-                  <p className="text-gray-600">Presidency University</p>
-                  
-                </div>
-                <div className="border-l-4 border-gray-700  pl-4 relative">
-                  <div className="flex justify-between items-start">
-                    <h3 className="text-lg font-medium">Higher Secondary</h3>
-                    <span className="text-gray-500 text-sm ml-4 bg-gray-50 px-3 py-1 rounded-full">2019 - 2020</span>
-                  </div>
-                  <p className="text-gray-600">Shaheed Ziaur Rahman College</p>
-                  
-                </div>
-              </div>
-            </div>
-            <div className="border rounded-lg p-6 bg-white shadow-sm hover:shadow-md transition-shadow duration-300" data-animation="text">
-              <h2 className="text-2xl font-semibold mb-6 text-gray-800 border-b pb-2">Experience</h2>
-              <div className="space-y-6">
-                <div className="border-l-4 border-gray-700 pl-4 relative">
-                  <div className="flex justify-between items-start">
-                    <h3 className="text-lg font-medium">Software Engineer</h3>
-                    <span className="text-gray-500 text-sm ml-4 bg-gray-50 px-3 py-1 rounded-full">Mar 2025 - Present</span>
-                  </div>
-                  <p className="text-gray-600">Appify Devs, Dhaka, Bangladesh</p>
-                </div>
-                <div className="border-l-4 border-gray-700 pl-4 relative">
-                  <div className="flex justify-between items-start">
-                    <h3 className="text-lg font-medium">MERN Stack Developer</h3>
-                    <span className="text-gray-500 text-sm ml-4 bg-gray-50 px-3 py-1 rounded-full">Nov 2024 - Feb 2025</span>
-                  </div>
-                  <p className="text-gray-600">Local Marketplace</p>
-                </div>
-              </div>
-            </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 max-w-6xl mx-auto w-full gap-6 mt-6">
+            <EducationSection/>
+            <ExperienceSection/>
           </div>
         </div>
       </section>

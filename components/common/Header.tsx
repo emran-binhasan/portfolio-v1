@@ -5,9 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
 import WaveUnderline from "../svgs/WaveUnderline";
-
-
-
+import ExternalLink from "../svgs/ExternalLink.svg";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -36,9 +34,14 @@ const Header = () => {
             <div key={link.href} className="relative">
               <Link
                 href={link.href}
-                className={clsx("pb-2") }
+                className={clsx("pb-2 flex gap-1 items-center p-1 group")}
               >
-                {link.label}
+                {link.label} 
+                <Image
+                  src={ExternalLink}
+                  alt="external link"
+                  className="transition-transform hidden group-hover:block duration-200"
+                />
               </Link>
               {isActive && <WaveUnderline />}
             </div>

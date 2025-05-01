@@ -22,25 +22,25 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="relative h-full w-full ">
+    <section className="relative h-full w-full ">
       <div
-        className="centered-block relative z-10 flex h-[80vh] flex-col flex-wrap items-center justify-center gap-y-4 lg:gap-8"
+        className="centered-block relative z-10 flex h-[60vh] sm:h-[80vh] flex-col flex-wrap items-center justify-center gap-y-4 lg:gap-8"
         ref={wrapperRef}
       >
         <h1
-          className="bottom-clipped relative inline-block translate-y-7 overflow-hidden text-center font-anek-bangla text-5xl font-normal text-raisin-black opacity-0 sm:text-6xl lg:text-7xl"
+          className="bottom-clipped relative inline-block translate-y-7 overflow-hidden text-center font-anek text-5xl font-normal text-raisin-black opacity-0 sm:text-6xl lg:text-[70px]"
           data-animation="text"
         >
           <span className="relative z-10">Hi, I&apos;m Emran Bin Hasan</span>
         </h1>
-        <h2
-          className="bottom-clipped inline-block translate-y-7 overflow-hidden text-center font-work-sans text-base font-normal text-neutral-600 opacity-0 sm:text-xl lg:max-w-[50%] lg:text-2xl"
+        <h4
+          className="bottom-clipped inline-block translate-y-7 overflow-hidden text-center font-work text-base font-normal text-neutral-600 opacity-0 sm:text-xl lg:max-w-[50%] lg:text-2xl"
           data-animation="text"
         >
           A Full Stack Engineer with a passion for creating engaging
           and intuitive websites.
-        </h2>
+        </h4>
       </div>
-    </div>
+    </section>
   );
 }

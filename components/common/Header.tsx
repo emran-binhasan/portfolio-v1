@@ -17,7 +17,7 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <header className="max-w-7xl mx-auto py-5 px-5 w-full flex justify-between items-center">
+    <header className="max-w-7xl mx-auto py-10 px-5 w-full flex justify-between items-center">
       <div>
         <Image
           src="/logo.png"

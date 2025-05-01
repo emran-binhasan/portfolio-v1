@@ -1,10 +1,12 @@
+import About from "@/components/sections/About";
 import Hero from "@/components/sections/Hero";
 
 const HomePage = () => {
   return (
     <>
       <Hero />
-      <div className="h-[600px] bg-pink-400"></div>
+      <div className="h-screen"></div>
+      <About/>
     </>
   );
 };

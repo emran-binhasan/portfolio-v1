@@ -5,7 +5,7 @@ import { gsap } from "gsap";
 
 export default function Hero() {
   const wrapperRef = useRef(null);
-  const t1 = useRef<any>(null);
+  const t1 = useRef<gsap.core.Timeline>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {

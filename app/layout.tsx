@@ -5,6 +5,7 @@ import clsx from "clsx";
 import { APP_DESCRIPTION, APP_NAME } from "@/lib/constants";
 import Header from "@/components/common/Header";
 import CustomCursor from "@/components/wrapper/CustomCursor";
+import CustomScrollSmoother from "@/components/wrapper/CustomScrollSmoother";
 
 const anekBangla = Anek_Bangla({
   variable: "--font-anek-bangla",
@@ -35,12 +36,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={clsx(workSans.variable, anekBangla.variable, poppins.variable, 'antialiased bg-gray-50 cursor-none')}
+        className={clsx(
+          workSans.variable,
+          anekBangla.variable,
+          poppins.variable,
+          "antialiased bg-gray-50"
+        )}
       >
         <CustomCursor>
-        <Header/>
-        
-        {children}
+          <Header />
+          <CustomScrollSmoother>{children}</CustomScrollSmoother>
         </CustomCursor>
       </body>
     </html>

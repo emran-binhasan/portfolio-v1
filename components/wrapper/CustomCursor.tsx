@@ -17,7 +17,7 @@ export default function CustomCursor({
     const scaleCursor = () => {
       if (!cursorEl) return;
 
-      let elements = document.querySelectorAll("h1, h2, h3, p, img, a");
+      const elements = document.querySelectorAll("h1, h2, h3, p, img, a");
 
       // Make cursor square when hovering on nav logo
       const logoEl = document.querySelector(".nav-logo");
@@ -46,7 +46,7 @@ export default function CustomCursor({
     const hideCustomCursor = () => {
       if (!cursorEl) return;
 
-      let elements = document.querySelectorAll(".no-rounded-cursor");
+      const elements = document.querySelectorAll(".no-rounded-cursor");
 
       elements.forEach(function (elem) {
         elem.addEventListener("mouseover", function () {
@@ -61,8 +61,8 @@ export default function CustomCursor({
     hideCustomCursor();
 
     const onMouseMove = (e: MouseEvent) => {
-      var mouseX = e.clientX;
-      var mouseY = e.clientY;
+      const mouseX = e.clientX;
+      const mouseY = e.clientY;
 
       if (!initCursor) {
         gsap.to(cursorEl, {
@@ -79,7 +79,7 @@ export default function CustomCursor({
       });
     };
 
-    const onMouseOut = (e: MouseEvent) => {
+    const onMouseOut = () => {
       gsap.to(cursorEl, {
         opacity: 0,
         duration: 0.5,

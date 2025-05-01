@@ -3,6 +3,7 @@ import { Anek_Bangla, Poppins, Work_Sans } from "next/font/google";
 import "@/styles/globals.css";
 import clsx from "clsx";
 import { APP_DESCRIPTION, APP_NAME } from "@/lib/constants";
+import Header from "@/components/common/Header";
 
 const anekBangla = Anek_Bangla({
   variable: "--font-anek-bangla",
@@ -35,6 +36,7 @@ export default function RootLayout({
       <body
         className={clsx(workSans.variable, anekBangla.variable, poppins.variable, 'antialiased bg-gray-50')}
       >
+        <Header/>
         
         {children}
       </body>

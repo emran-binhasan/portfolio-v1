@@ -1,25 +1,32 @@
-@import "tailwindcss"; /* Tailwind import, assuming you're using PostCSS or similar setup */
+@import "tailwindcss";
 
+/* Root theme variables */
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  
-  /* Google Fonts (based on your layout setup) */
+
+  /* Font families from Google Fonts */
   --font-anek-bangla: "Anek Bangla", sans-serif;
   --font-poppins: "Poppins", sans-serif;
   --font-work-sans: "Work Sans", sans-serif;
 }
 
-
+/* Base styles */
 body {
   color: var(--foreground);
-  font-family: var(--font-work-sans); 
+  font-family: var(--font-work-sans); /* Default font */
 }
 
-code {
-  font-family: var(--font-poppins); /* Mono or alternative fonts */
+/* Font utility classes */
+.font-poppins {
+  font-family: var(--font-poppins);
 }
 
-h1, h2, h3 {
-  font-family: var(--font-anek-bangla); /* Use Anek Bangla for headers */
+.font-anek {
+  font-family: var(--font-anek-bangla);
 }
+
+.font-work {
+  font-family: var(--font-work-sans);
+}
+

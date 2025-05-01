@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Anek_Bangla, Poppins, Work_Sans } from "next/font/google";
-import "./globals.css";
+import "@/styles/globals.css";
 import clsx from "clsx";
+import { APP_DESCRIPTION, APP_NAME } from "@/lib/constants";
 
 const anekBangla = Anek_Bangla({
   variable: "--font-anek-bangla",
@@ -20,8 +21,8 @@ const workSans = Work_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Emran Bin Hasan",
-  description: "Emran | Software Engineer",
+  title: APP_NAME,
+  description: APP_DESCRIPTION,
 };
 
 export default function RootLayout({
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body
         className={clsx(workSans.variable, anekBangla.variable, poppins.variable, 'antialiased bg-gray-50')}
       >
+        
         {children}
       </body>
     </html>

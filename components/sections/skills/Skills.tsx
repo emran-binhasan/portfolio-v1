@@ -236,7 +236,7 @@ const SkillsSection: React.FC = () => {
   };
 
   return (
-    <section className="py-20">
+    <section className="py-10 md:py-20">
       <div className="container mx-auto px-4 w-full max-w-full md:max-w-6xl" ref={wrapperRef}>
         <div className="py-4 px-2 sm:px-3 md:p-6 rounded-lg relative z-10">
           <div className="flex flex-col justify-center w-full space-y-2 md:space-y-4 mb-12">
@@ -261,7 +261,7 @@ const SkillsSection: React.FC = () => {
               <button
                 key={category}
                 onClick={() => handleCategoryChange(category)}
-                className={`category-btn px-3 py-2.5 md:px-4 md:py-3 rounded-lg text-sm font-medium transition-all relative ${
+                className={`category-btn px-2.5 py-2.5 md:px-4 md:py-3 rounded-lg  font-medium transition-all relative ${
                   activeCategory === category
                     ? "text-gray-800"
                     : "bg-gray-50 text-gray-600 border border-gray-200 hover:border-gray-300"
@@ -300,7 +300,7 @@ const SkillsSection: React.FC = () => {
                     className="skills-row-item bg-gray-50 px-1 py-1.5 md:px-3 md:py-2 rounded-lg flex items-center border border-gray-200 hover:border-indigo-200 hover:bg-indigo-50 transition-colors duration-300"
                   >
                     {renderSkillIcon(skill)}
-                    <span className="text-sm text-gray-700 text-nowrap">{skill.name}</span>
+                    <span className=" text-gray-700 text-nowrap">{skill.name}</span>
                   </div>
                 ))}
               </div>

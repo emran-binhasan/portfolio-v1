@@ -50,13 +50,13 @@ const About = () => {
     <>
       <section className="bg-gray-100 py-10 flex items-center">
         <div className="flex flex-col justify-center w-full space-y-2 md:space-y-4 " ref={wrapperRef}>
-          <h1
+          <h2
             ref={titleRef}
             className="bottom-clipped relative inline-block overflow-hidden text-center font-anek text-4xl font-normal text-raisin-black sm:text-5xl lg:text-6xl"
             data-animation="text"
           >
             <span className="relative z-10">About Me</span>
-          </h1>
+          </h2>
           <h4
             className="bottom-clipped inline-block translate-y-7 overflow-hidden text-center mx-auto w-full font-work text-base font-normal text-neutral-600 opacity-0 sm:text-lg lg:max-w-4/5 lg:text-xl"
             data-animation="text"

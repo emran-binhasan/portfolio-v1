@@ -1,12 +1,16 @@
+// Featured Project Component
 "use client";
 
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import FeaturedProject from "./FeaturedProject";
+import SeeMore from "./SeeMore";
+import projects from "@/db/featured-projects.json"
 const FeaturedProjects = () => {
-    const wrapperRef = useRef(null);
+  const wrapperRef = useRef(null);
   const titleRef = useRef(null);
+
 
   useEffect(() => {
     // Register ScrollTrigger plugin
@@ -29,7 +33,7 @@ const FeaturedProjects = () => {
           stagger: 0.1,
           scrollTrigger: {
             trigger: wrapperRef.current,
-            start: "top 90%", // Animation starts when top of element reaches 80% from top of viewport
+            start: "top 90%", // Animation starts when top of element reaches 90% from top of viewport
             once: true, // Only trigger animation once
             // markers: true, // Uncomment for debugging - shows markers in the browser
           },
@@ -46,8 +50,11 @@ const FeaturedProjects = () => {
 
   return (
     <>
-      <section className="py-10 md:py-20">
-        <div className="flex flex-col justify-center gap-3 " ref={wrapperRef}>
+
+      {/* Featured Projects Section */}
+      <div className="w-full bg-slate-100 py-10 md:py-20" id="projects">
+        <div className="centered-block flex flex-col justify-center">
+        <div className="flex flex-col justify-center gap-3" ref={wrapperRef}>
         <h2
             ref={titleRef}
             className="bottom-clipped relative inline-block overflow-hidden text-center font-anek text-4xl font-normal text-raisin-black sm:text-5xl lg:text-6xl"
@@ -61,8 +68,18 @@ const FeaturedProjects = () => {
           >
             Some of my latest projects ..
           </p>
+         </div>
+       
         </div>
-      </section>
+
+        {/* Projects List */}
+        {projects.map((project) => (
+          <FeaturedProject key={project?.name} project={project} />
+        ))}
+
+        {/* See More Section */}
+        <SeeMore />
+      </div>
     </>
   );
 };

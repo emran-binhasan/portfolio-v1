@@ -1,0 +1,73 @@
+[
+    {
+        "name": "Loomence – Fashion Commerce Redefined",
+        "description": "Loomence is a modern fashion e-commerce platform built with Next.js, ShadCN UI, Prisma ORM, and NeonDB (PostgreSQL). Designed to deliver an elegant and performant shopping experience, it features a modular product system, streamlined checkout flow, and responsive UI with a focus on visual aesthetics and usability. The platform is built for scalability and integrates optimized database queries for enhanced performance across devices.",
+        "featuredImage": "/websites/loomence.png",
+        "tags": [
+            "NextJS",
+            "ShadCN",
+            "Prisma",
+            "NeonDB",
+            "PostgreSQL"
+        ],
+        "buttonText": "Coming Soon",
+        "link": "https://loomence.vercel.app/",
+        "repository_link": null
+    },
+    {
+        "name": "FitStat – Personal Training & Progress Tracker",
+        "description": "FitStat is a comprehensive fitness management app built with a full-stack architecture. Users can hire professional trainers, book fitness classes, and track their daily progress toward personal health goals. The app features a sleek dashboard, interactive goal-setting, and an intuitive booking system. Built with scalability in mind, FitStat offers a responsive design and supports seamless navigation across devices.",
+        "featuredImage": "/websites/fitstat.png",
+        "tags": [
+            "React",
+            "GSAP",
+            "Tailwind",
+            "Express",
+            "MongoDB",
+            "Stripe"
+        ],
+        "buttonText": "Visit Website",
+        "link": "https://fitstat.netlify.app/",
+        "repository_link": "https://github.com/emran-binhasan/fitstat-client"
+    },
+    {
+        "name": "Lodgio – Seamless Hotel Booking Experience",
+        "description": "Lodgio is an end-to-end hotel booking platform tailored for effortless travel planning. Built with a robust React-based frontend, it enables users to browse accommodations, view detailed property galleries, and make secure bookings. The platform emphasizes clarity and convenience, offering dynamic search filters and mobile-first design optimized for a wide range of devices and screen sizes.",
+        "featuredImage": "/websites/lodgio.png",
+        "tags": [
+            "React",
+            "Tailwind",
+            "Express",
+            "MongoDB"
+        ],
+        "buttonText": "Visit Website",
+        "link": "https://lodgio.netlify.app/",
+        "repository_link": "https://github.com/emran-binhasan/lodgio-client"
+    },
+    {
+        "name": "Visa Glide – Effortless Visa Applications",
+        "description": "Visa Glide is a digital visa support platform that simplifies complex travel documentation. With a responsive interface and clean form design, users can apply for visas, upload necessary documents, and track application progress in real time. Built using React and a full-stack backend, the app reduces manual overhead and ensures transparency through the entire application cycle.",
+        "featuredImage": "/websites/visa-glide.png",
+        "tags": [
+            "React",
+            "Tailwind",
+            "Express",
+            "MongoDB"
+        ],
+        "buttonText": "Visit Website",
+        "link": "https://visa-glide.netlify.app/",
+        "repository_link": "https://github.com/emran-binhasan/visa-glide-client"
+    },
+    {
+        "name": "Lingo Fox – Interactive Language Learning",
+        "description": "Lingo Fox is a lightweight and engaging platform for language learners, offering intuitive lessons and interactive exercises. Built with a responsive React frontend, it supports a distraction-free learning environment and includes gamified elements like progress tracking and mini-quizzes. The app is ideal for beginners looking to build vocabulary and conversational skills with a fun, easy-to-use interface.",
+        "featuredImage": "/websites/lingo-fox.png",
+        "tags": [
+            "React",
+            "Frontend"
+        ],
+        "buttonText": "Visit Website",
+        "link": "https://lingo-fox.netlify.app/",
+        "repository_link": null
+    }
+]

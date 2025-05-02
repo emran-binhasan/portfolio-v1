@@ -4,7 +4,7 @@ import { JSX, useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
-import {Skill,skillsData} from '@/db/SkillsData'
+import {Skill,skillsData} from '@/db/skills-data'
 
 
 

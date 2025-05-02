@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Skill } from '@/db/SkillsData';
+import { Skill } from '@/db/skills-data';
 
 // Helper for fallback icon placeholder
 export const IconPlaceholder = () => {

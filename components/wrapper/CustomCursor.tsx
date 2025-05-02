@@ -17,7 +17,7 @@ export default function CustomCursor({
     const scaleCursor = () => {
       if (!cursorEl) return;
 
-      const elements = document.querySelectorAll("h1, h2, h3, p, img, a");
+      const elements = document.querySelectorAll("h1, h2, h3, p, img");
 
       // Make cursor square when hovering on nav logo
       const logoEl = document.querySelector(".nav-logo");

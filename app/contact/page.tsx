@@ -61,7 +61,7 @@ const ContactPage = () => {
   }, []);
 
   return (
-    <section className="relative bg-gray-100 py-16 md:py-24 flex flex-col items-center">
+    <section className="relative  min-h-[92vh] bg-gray-100 py-16 md:py-24 flex flex-col items-center">
       {/* Text Section */}
       <div
         className="flex flex-col justify-center items-center w-full space-y-4 text-center"

@@ -6,6 +6,7 @@ import { APP_DESCRIPTION, APP_NAME } from "@/lib/constants";
 import Header from "@/components/common/Header";
 import CustomCursor from "@/components/wrapper/CustomCursor";
 import CustomScrollSmoother from "@/components/wrapper/CustomScrollSmoother";
+import Footer from "@/components/common/Footer";
 
 const anekBangla = Anek_Bangla({
   variable: "--font-anek-bangla",
@@ -45,7 +46,10 @@ export default function RootLayout({
       >
         <CustomCursor>
           <Header />
-          <CustomScrollSmoother>{children}</CustomScrollSmoother>
+          <CustomScrollSmoother>
+            {children}
+            <Footer />
+          </CustomScrollSmoother>
         </CustomCursor>
       </body>
     </html>

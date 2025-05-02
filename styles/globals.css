@@ -4,7 +4,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-
+  
   /* Font families from Google Fonts */
   --font-anek-bangla: "Anek Bangla", sans-serif;
   --font-poppins: "Poppins", sans-serif;
@@ -30,3 +30,44 @@ body {
   font-family: var(--font-work-sans);
 }
 
+/* Fix for custom cursor interactions */
+a, button, .nav-logo {
+  cursor: pointer !important;
+  position: relative;
+  z-index: 2;
+}
+
+/* Make nav links always interactive */
+nav a {
+  pointer-events: auto !important;
+}
+
+/* Ensure hover effects work consistently */
+.group:hover img {
+  opacity: 1 !important;
+  display: inline-block !important;
+}
+
+/* Default cursor behavior based on screen size */
+@media (max-width: 1024px) {
+  body {
+    cursor: default !important;
+  }
+  
+  a, button, input, select, textarea {
+    cursor: pointer !important;
+  }
+}
+
+/* Transition effects for navigation elements */
+nav a, .nav-logo {
+  transition: opacity 0.2s ease;
+}
+
+nav a:hover, .nav-logo:hover {
+  opacity: 0.8;
+}
+svg {
+  visibility: visible !important;
+  display: block !important;
+}

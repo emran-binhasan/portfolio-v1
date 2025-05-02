@@ -61,13 +61,13 @@ const ProjectsPage = () => {
   }, []);
 
   return (
-    <section className="relative bg-gray-100 py-16 md:py-24 flex flex-col items-center">
+    <section className="relative min-h-[92vh] bg-gray-100 py-16 md:py-24 flex flex-col items-center">
       {/* Text Section */}
       <div
         className="flex flex-col justify-center items-center w-full space-y-4 text-center"
         ref={wrapperRef}
       >
-         <div className="mt-16 w-full max-w-sm animate-fadeIn">
+         <div className="mt-16 w-full max-w-44 sm:max-w-60  animate-fadeIn">
         <svg viewBox="0 0 600 300" className="w-full h-auto">
           <rect x="0" y="0" width="600" height="300" rx="20" fill="#1E293B" />
           <rect x="20" y="20" width="20" height="20" rx="10" fill="#EF4444" />

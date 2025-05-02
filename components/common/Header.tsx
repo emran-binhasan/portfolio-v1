@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 import clsx from "clsx";
 import WaveUnderline from "../svgs/WaveUnderline";
 import ExternalLink from "../svgs/ExternalLink.svg";
@@ -15,6 +16,12 @@ const navLinks = [
 
 const Header = () => {
   const pathname = usePathname();
+  const [mounted, setMounted] = useState(false);
+  
+  // Handle client-side mounting
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <header className="max-w-7xl mx-auto py-10 px-5 w-full flex justify-between items-center">
@@ -29,7 +36,7 @@ const Header = () => {
       </div>
       <nav className="flex items-center gap-6 font-poppins text-lg relative">
         {navLinks.map((link) => {
-          const isActive = pathname === link.href;
+          const isActive = mounted && pathname === link.href;
           return (
             <div key={link.href} className="relative">
               <Link
@@ -43,7 +50,11 @@ const Header = () => {
                   className="transition-transform hidden group-hover:block duration-200"
                 />
               </Link>
-              {isActive && <WaveUnderline />}
+              {isActive && (
+                <div className="absolute -bottom-1 left-0 w-full z-10">
+                  <WaveUnderline />
+                </div>
+              )}
             </div>
           );
         })}

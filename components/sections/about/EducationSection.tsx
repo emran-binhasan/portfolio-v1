@@ -12,7 +12,7 @@ export default function EducationSection() {
   }, []);
 
   return (
-    <div data-animation="text" className="p-4 p-6 bg-white shadow-sm hover:shadow-md transition-shadow duration-300 relative rounded-lg">
+    <div data-animation="text" className="p-4 md:p-6 bg-white shadow-sm hover:shadow-md transition-shadow duration-300 relative rounded-lg">
       {/* Animated grayscale border */}
       <div
         className="absolute inset-0 rounded-lg"

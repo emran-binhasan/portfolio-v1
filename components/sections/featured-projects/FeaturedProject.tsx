@@ -59,7 +59,7 @@ function FeaturedProject({ project }: FeaturedProjectType) {
 
   return (
     <div
-      className="w-full translate-y-60 py-16 max-w-7xl mx-auto"
+      className="w-full px-4 translate-y-60 py-14 max-w-7xl mx-auto"
       ref={wrapperRef}
     >
       <div className="centered-block flex h-full flex-col items-center gap-10 lg:flex-row">

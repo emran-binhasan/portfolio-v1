@@ -237,7 +237,7 @@ const SkillsSection: React.FC = () => {
 
   return (
     <section className="py-20">
-      <div className="container mx-auto px-4 max-w-6xl" ref={wrapperRef}>
+      <div className="container mx-auto px-4 w-full md:max-w-6xl" ref={wrapperRef}>
         <div className="p-6 rounded-lg relative z-10">
           <div className="flex flex-col justify-center w-full space-y-2 md:space-y-4 mb-12">
             <h2
@@ -261,7 +261,7 @@ const SkillsSection: React.FC = () => {
               <button
                 key={category}
                 onClick={() => handleCategoryChange(category)}
-                className={`category-btn px-4 py-3 rounded-lg text-sm font-medium transition-all relative ${
+                className={`category-btn px-2.5 py-2 md:px-4 md:py-3 rounded-lg text-sm font-medium transition-all relative ${
                   activeCategory === category
                     ? "text-gray-800"
                     : "bg-gray-50 text-gray-600 border border-gray-200 hover:border-gray-300"
@@ -297,7 +297,7 @@ const SkillsSection: React.FC = () => {
                 {row.map((skill, skillIndex) => (
                   <div
                     key={`${skill.name}-${skillIndex}`}
-                    className="skills-row-item bg-gray-50 px-3 py-2.5 rounded-lg flex items-center border border-gray-200 hover:border-indigo-200 hover:bg-indigo-50 transition-colors duration-300"
+                    className="skills-row-item bg-gray-50 md:px-3 md:py-2.5 rounded-lg flex items-center border border-gray-200 hover:border-indigo-200 hover:bg-indigo-50 transition-colors duration-300"
                   >
                     {renderSkillIcon(skill)}
                     <span className="text-sm text-gray-700 text-nowrap">{skill.name}</span>

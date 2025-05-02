@@ -22,7 +22,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-full w-full ">
+    <section className="py-10 relative h-full w-full ">
       <div
         className="centered-block relative z-10 flex h-[60vh] sm:h-[80vh] flex-col flex-wrap items-center justify-center gap-y-4 lg:gap-8"
         ref={wrapperRef}

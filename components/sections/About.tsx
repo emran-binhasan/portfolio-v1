@@ -66,7 +66,7 @@ const About = () => {
             and seamless user interfaces, delivering clean, high-impact
             solutions across the full stack.
           </h4>
-          <div className="grid grid-cols-1 lg:grid-cols-2 max-w-6xl mx-auto w-full gap-6 mt-6">
+          <div className="grid p-1 grid-cols-1 lg:grid-cols-2 max-w-6xl mx-auto w-full gap-6 mt-6">
             <EducationSection/>
             <ExperienceSection/>
           </div>

@@ -6,7 +6,6 @@ const HomePage = () => {
   return (
     <>
       <Hero />
-      <div className="h-[400px]"></div>
       <About />
       <Skills/>
     </>

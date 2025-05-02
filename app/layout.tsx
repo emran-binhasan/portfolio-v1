@@ -40,7 +40,7 @@ export default function RootLayout({
           workSans.variable,
           anekBangla.variable,
           poppins.variable,
-          "antialiased bg-gray-50"
+          "antialiased bg-gray-50 cursor-none"
         )}
       >
         <CustomCursor>

@@ -297,7 +297,7 @@ const SkillsSection: React.FC = () => {
                 {row.map((skill, skillIndex) => (
                   <div
                     key={`${skill.name}-${skillIndex}`}
-                    className="skills-row-item bg-gray-50 px-1 py-1.5 md:px-3 md:py-2 rounded-lg flex items-center border border-gray-200 hover:border-indigo-200 hover:bg-indigo-50 transition-colors duration-300"
+                    className="skills-row-item bg-gray-50 px-1 py-1.5 md:px-3 md:py-2.5 rounded-lg flex items-center border border-gray-200 hover:border-indigo-200 hover:bg-indigo-50 transition-colors duration-300"
                   >
                     {renderSkillIcon(skill)}
                     <span className=" text-gray-700 text-nowrap">{skill.name}</span>
